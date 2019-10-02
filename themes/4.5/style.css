@@ -1,0 +1,212 @@
+/*
+Theme Name: NumClique
+Theme URI: http://www.numclique.net
+Description: Tema com os anúncios de afiliados
+Version: 4.5
+Author: Joares Wallace Miranda e PH Santos
+*/
+
+
+* { margin:0; padding:0; }
+
+body { font:14px Arial, Helvetica, sans-serif; color:#333; }
+
+#SuperBanner h4,
+#Menu h4,
+#Coluna h4 { display:none; }
+
+a { color:#333; text-decoration:none; }
+a:hover { text-decoration:underline; }
+a img { border:none; }
+
+
+/*
+Conteudo
+************************************************************************/
+#Content { width:960px; margin:0 auto; position:relative; clear:both; }
+
+#SuperBanner { position:absolute; top:0; left:50%; background:url(img/bg_superbanner.gif) no-repeat top center; width:940px; height:110px; margin-left:-470px; }
+#SuperBanner div { width:728px; height:90px; margin:10px auto 0 auto; }
+
+#Header { margin-top:130px; position:relative; }
+#Header h1 { text-indent:-5000px; overflow:hidden; background:url(img/logo-numclique-topo.gif) no-repeat top left; width:281px; height:85px; }
+#Header h1 a { width:281px; height:85px; display:block; }
+
+#Busca { width:305px; position:absolute; top:20px; right:0; }
+#Busca fieldset { border:none; }
+#Busca legend,
+#Busca label { display:none; }
+#Busca form { background:url(img/bg-busca.gif) no-repeat top left; width:302px; height:37px; margin-bottom:8px; }
+#Busca #s { width:245px; height:28px; padding:2px 5px; position:relative; top:2px; left:2px; border:none; }
+#Buscar { border:none; text-indent:-5000px; overflow:hidden; background:url(img/bt-busca.gif) no-repeat top left; width:27px; height:27px; cursor:pointer; position:relative; top:3px; left:4px; }
+.navegacaoSecundaria { font-size:12px; }
+
+#Menu { border-top:1px dotted #CCC; border-bottom:1px dotted #CCC; margin:20px 0; width:960px; clear:both; }
+#Menu ul { padding:15px 0; }
+#Menu li { list-style:none; display:inline; margin-right:30px; font:18px Arial, Helvetica, sans-serif; }
+
+#Posts { width:630px; float:left; }
+
+.cxPost { margin-bottom:35px; position:relative; }
+
+#Posts .cartola { font:bold 12px Arial, Helvetica, sans-serif; }
+#Posts h1,
+#Posts h2 { font-family: 'Terminal Dosis Light', arial, serif; font-size:36px; margin-bottom:15px; }
+.txtPost { line-height:160%; }
+.txtPost p { margin-bottom:20px; }
+.txtPost a { color:#F60; }
+.txtPost h3 { font-family: 'Terminal Dosis Light', arial, serif; font-size:26px; margin-bottom:10px; }
+.leiamais { background-color:#F4F4F4; padding:0 8px; text-align:right; margin:15px 0; clear:both; font-size:12px; width:614px; float:left; }
+.leiamais a { color:#333; }
+
+.txtPost p small { color:#CCC; }
+
+#AdSenseRodapePost { margin:15px 0; border-bottom:1px solid #F4F4F4; padding-bottom:15px; }
+
+.footerPost { width:630px; clear:both; border-bottom:3px solid #F4F4F4; font-size:12px; position:relative; padding-bottom:15px; }
+.infosCapaPost { line-height:160%; }
+#Capa .btShare { position:absolute; top:50%; right:0; margin-top:-15px; }
+.btShare li { list-style:none; display:inline; }
+.shareGooglePlus div { width:68px !important; }
+
+/* alinhamentos */
+.txtPost img.esquerda,
+.txtPost img.imgalignleft,
+.txtPost img.alignleft,
+.txtPost div.alignleft { margin:0px 10px 5px 0px; float:left; }
+.txtPost img.direita,
+.txtPost img.imgalignright,
+.txtPost img.alignright,
+.txtPost div.alignright { margin:0px 0px 5px 10px; float:right; }
+.txtPost img.aligncenter,
+.txtPost div.aligncenter { margin:0px auto 5px auto; clear:both; text-align:center; }
+.txtPost .paginador { clear:both; text-align:center; position:relative; top:20px; }
+.aligncenter,
+p object,
+.flashvideo embed { display:block; margin:5px auto; }
+.alignright { margin:0px 0px 5px 10px; float:right; }
+.alignleft { margin:0px 10px 5px 0px; float:left; }
+
+/* foto com legenda */
+.wp-caption { text-align:center; background-color: #F9F9F9; margin:10px 0; clear:both; }
+.wp-caption img { margin:0; padding:0; border:0 none; }
+.wp-caption p.wp-caption-text { font-size:11px; line-height:15px; padding:2px 0; margin: 0; }
+
+blockquote { width:585px; margin-top:10px; padding:10px 10px 10px 35px; background:url(img/bg-blockquote.gif) no-repeat top left; color:#666; text-align:left; font-style:italic; }
+blockquote cite { margin-top:10px; display: block; }
+
+/* paginacao */
+#navegacao { clear:both;  text-align:right; margin-bottom:25px; font-size:12px; }
+#navegacao .wp-pagenavi a { padding: 2px 4px; margin: 2px; text-decoration: none; border: 1px solid #FC0; color: #000; background-color: #FFF;	}
+#navegacao .wp-pagenavi a:hover { border: 1px solid #FC0; color: #000; background-color: #FC0; }
+#navegacao .wp-pagenavi span.pages { display:none; }
+#navegacao .wp-pagenavi span.current,
+#navegacao .wp-pagenavi span.extend { padding: 2px 4px; margin: 2px; color: #000; background-color: #FFF; }
+#navegacao .wp-pagenavi span.current { font-weight: bold; border:none; }
+#navegacao .wp-pagenavi span.extend { border: 1px solid #FC0;  display:none; }
+
+
+/*
+Coluna
+************************************************************************/
+#Coluna { width:300px; margin:0 0 20px 20px; float:left; }
+#Coluna h3 { font:bold 18px Arial, Helvetica, sans-serif; border-bottom:2px solid #FC0; padding-bottom:10px; margin-bottom:10px; text-transform:lowercase; }
+
+#XoxalMedia { width:300px; border-bottom:1px dotted #CCC; margin-bottom:20px; padding-bottom:20px; }
+#XoxalMedia p { font-size:12px; margin-left:54px; }
+#XoxalMedia p.numeroTotal { font:bold 25px Arial, Helvetica, sans-serif; }
+.numerosRSS { width:120px; height:55px; background:url(img/ic_rss.jpg) no-repeat top left; float:left; }
+.numerosRSS .numeroTotal a { color:#EE6633; }
+.numerosTwitter { width:120px; height:55px; background:url(img/ic_twitter.jpg) no-repeat top left; margin-left:150px; }
+.numerosTwitter .numeroTotal a { color:#479097; }
+
+#PostsRecentes li { list-style:none; border-bottom:1px solid #CCC; padding-bottom:10px; margin-bottom:10px; font-size:12px; width:300px; }
+
+#BannerQuadrado { text-align:center; width:310px; margin:20px 0; padding:20px 0; border-bottom:1px dotted #CCC; }
+
+#BannerFacebook { margin:15px 0; }
+#BannerFacebook a { text-indent:-5000px; overflow:hidden; width:300px; height:379px; background:url(img/banner-facebook-fanpage-numclique.gif) no-repeat top left; display:block; }
+#BannerFacebook iframe { margin-top:-2px; }
+
+#HotLinks li { list-style:none; border-bottom:1px solid #CCC; padding-bottom:10px; margin:20px 0 15px 0; width:300px; clear:both; float:left; line-height:140%; }
+#HotLinks li img { margin-right:20px; }
+
+#ValeClique { margin-top:20px; width:300px; clear:both; float:left; padding-bottom:15px; border-bottom:1px dotted #CCC; }
+#ValeClique p { clear:both; margin-bottom:10px; }
+#ValeClique li { list-style:none; width:65px; height:65px; margin:5px 10px 5px 0; float:left; }
+
+#Categorias,
+#Arquivo,
+#Links { margin-top:20px; width:300px; clear:both; float:left; padding-bottom:15px; border-bottom:1px dotted #CCC; }
+
+#Links li { list-style:none; border-bottom:1px solid #CCC; padding-bottom:10px; margin-bottom:10px; font-size:12px; width:310px; }
+
+#boxFacebook { width:960px; margin:20px auto; }
+
+
+
+/*
+Footer
+************************************************************************/
+#Footer { width:100%; background-color:#EFEFEF; padding:15px 0; clear:both; }
+#ContentFooter { width:960px; margin:0 auto; }
+#Footer h3 { font:bold 18px Arial, Helvetica, sans-serif; border-bottom:2px solid #FC0; padding-bottom:10px; margin-bottom:10px; text-transform:lowercase; }
+
+#Tags { clear:both; padding-top:0; }
+#Tags div { text-align:center; }
+#Tags a { color:#999; margin:2px; }
+
+#Creditos { width:960px; margin:15px auto; }
+#Creditos img { width:139px; float:left; border-right:1px solid #CCC; margin-right:25px; padding-right:25px; }
+#Creditos ul { position:relative; top:13px; }
+#Creditos li { list-style:none; display:inline; margin-right:30px; font:14px Arial, Helvetica, sans-serif; }
+#Creditos p { text-align:right; font-size:11px; margin:20px 0 10px 0; text-transform:lowercase; }
+#Creditos p a { text-decoration:underline; font-weight:bold; }
+
+
+
+/*
+Paginas internas
+************************************************************************/
+.metaPost { margin-bottom:20px; color:#999; font-size:12px; }
+
+#FacebookFinalPost { width:630px; clear:both; border-bottom:1px solid #F4F4F4; margin:15px 0; padding-bottom:45px; }
+
+.adsense-post { width:630px; height:250px; margin-bottom:15px; padding-bottom:15px; border-bottom:1px solid #F4F4F4; clear:both; }
+.adsense-post div { float:left; }
+.adsense-post .quadrado2 { margin-left:25px; }
+
+.postsRelacionados { border-bottom:1px solid #F4F4F4; margin-bottom:10px; padding-bottom:10px; }
+.postsRelacionados ul { margin:10px 0 15px 0; }
+.postsRelacionados ul li { padding:3px 0; margin:3px 0; list-style:none }
+.postsRelacionados ul li a { color:#666; }
+
+.postsRelacionados h3,
+#Comentarios h3 { font-family: 'Terminal Dosis Light', arial, serif; font-size:23px; margin:15px 0; }
+#Comentarios { margin-bottom:40px; }
+
+.caixaAutor { border-bottom:1px dotted #CCC; margin-bottom:20px; padding-bottom:20px; }
+.caixaAutor img { float:right; margin:0 0 10px 10px; }
+.caixaAutor .nomeAutor { font-family: 'Terminal Dosis Light', arial, serif; font-size:23px; margin-bottom:5px; }
+.caixaAutor p { margin-bottom:5px; font-size:12px; line-height:21px; }
+
+#Interna .btShare { margin-bottom:20px; }
+
+
+/* CONTATO */
+.pgContato { font-size:11px; }
+.pgContato p { margin-bottom:10px; }
+#ctForm { width:460px; margin:0 auto;}
+#ctForm p { margin:10px 0 5px 0; color:#666; }
+#ctForm input { width:300px; height:20px; padding:2px; border:1px solid #666; font:12px "Trebuschet MS",Verdana, Arial, Helvetica, sans-serif; color:#333; }
+#ctForm input#ctDDD { width:50px; text-align:center; }
+#ctForm input#ctFone { width:240px; }
+#ctForm input#btEnviarCt { width:150px; height:35px; position:relative; left:239px; cursor:pointer; }
+#nome { margin-left:35px; }
+#fone { margin-left:32px; }
+#email { margin-left:32px; }
+#url { margin-left:23px; }
+#assunto { margin-left:24px; }
+#mensagem { float:left; margin:0 5px 0 7px; }
+#ctForm #ctMsgs { width:300px; height:200px; padding:2px; border:1px solid #666; font:12px "Trebuschet MS",Verdana, Arial, Helvetica, sans-serif; color:#333; }
+p.legenda { font:italic 11px Verdana, Arial, Helvetica, sans-serif; color:#999; margin-left:30px; }
